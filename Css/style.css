@@ -1,0 +1,1166 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alef', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s;
+    transform: all 0.3s;
+}
+
+/* Estilos del Index */
+li {
+    list-style: none;
+}
+
+/* Estilos del Nav */
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration-line: none;
+    text-shadow: 2px 2px 3px black;
+    font-size: 22px;
+}
+
+.bar-btn i {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+/* fin estilos del nav */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+.Contenedor {
+    background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/slideee-1.jpg);
+    background-position-y: 40%;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 15%) repeat(2, 20%) 15%;
+    grid-template-rows: 50px repeat(4, 75px);
+}
+
+.item {
+    grid-area: 1 / 1 / 3 / 3;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.item2 {
+    grid-area: 3 / 1 / 4 / 7;
+}
+
+
+.item3 {
+    background-color: rgba(166, 21, 185, 0.507);
+    color: white;
+    margin-bottom: 10px;
+    overflow: hidden;
+    grid-area: 5 / 1 / 6 / 5;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* fin estilos Index */
+/* Estilos de las secciones*/
+.Secciones {
+    height: 600px;
+    width: 100%;
+    background-color: orange;
+}
+
+.Secciones h2 {
+    width: 100%;
+    height: 50px;
+    background-color: purple;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Secciones2 {
+    height: 600px;
+    width: 100%;
+    background-color: white;
+}
+
+.Secciones2 h2 {
+    width: 100%;
+    height: 50px;
+    background-color: purple;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 50px;
+    color: white;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Inicio Grid Quienes somos */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 15%) repeat(2, 20%) 15%;
+    grid-template-rows: 50px repeat(2, 160px) repeat(2, 115px);
+}
+
+.divQuienes {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.historia {
+    grid-area: 2 / 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.botones {
+    text-align: center;
+}
+
+button {
+    font-size: 16px;
+}
+
+.textoHistoria {
+    grid-area: 2 / 4 / 5 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+.vision {
+    grid-area: 5 / 4 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Fin Grid Quienes Somos */
+/* Inicio Grid Comercios Asociados */
+.grid2 {
+    display: grid;
+    grid-template-columns: repeat(2, 15%) repeat(7, 10%);
+    grid-template-rows: 50px repeat(2, 160px) repeat(2, 115px);
+}
+
+.divComercios {
+    grid-area: 1 / 1 / 2 / 3
+}
+
+.mapaArgentina {
+    grid-area: 1/ 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.textoComercios {
+    text-align: center;
+    display: inline-block;
+    grid-area: 2 / 4 / 5 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.comercio {
+    background-color: white;
+    grid-area: 2 / 7 / 5/ 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Fin Grid Comercios Asociados */
+/* Inicio Grid Productos */
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 15%) 5% repeat(2, 15%) 5% repeat(2, 15%);
+    grid-template-rows: 50px repeat(3, 100px) 100px 150px;
+}
+
+.divProductos {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.productos {
+    grid-area: 2 / 2 / 6 / 8;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+/* Incio Carrousel */
+
+#slider {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    border: 2px solid rgb(128, 125, 125);
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#slides .slide_1, #slides .slide_2,#slides .slide_3,#slides .slide_4 {
+background-size: contain;
+background-repeat: no-repeat;
+background-position-x: center;
+color: black;
+display:flex;
+align-items: flex-end;
+justify-content: center;
+padding-bottom: 20px;
+}
+
+#slides .slide_1 {
+    background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Enduido_10L-1024x1024.jpg);
+}
+
+#slides .slide_2 {
+    background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Latex_Interior_20L-1024x1024.jpg);
+}
+
+#slides .slide_3 {
+    background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Membrana-PU_20Kg-1024x1024.jpg);
+}
+
+#slides .slide_4 {
+    background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Membrana_20Kg-1024x1024.jpg);
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked~#controls label:nth-child(2),
+#slide2:checked~#controls label:nth-child(3),
+#slide3:checked~#controls label:nth-child(4),
+#slide4:checked~#controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float: right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked~#controls label:nth-last-child(2),
+#slide2:checked~#controls label:nth-last-child(3),
+#slide3:checked~#controls label:nth-last-child(4),
+#slide4:checked~#controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float: left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: orange;
+    margin: 0 10px;
+}
+
+#slide1:checked~#bullets label:nth-child(1),
+#slide2:checked~#bullets label:nth-child(2),
+#slide3:checked~#bullets label:nth-child(3),
+#slide4:checked~#bullets label:nth-child(4) {
+    background: purple;
+}
+
+/* Fin Carrousel */
+
+.sponsors {
+    grid-area: 6 / 4 / 7 / 6;
+    text-align: center;
+}
+
+.imgSponsor {
+    grid-area: 6 / 1 / 7 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSponsor div {
+    margin-left: 15px;
+}
+
+/* Fin Grid Productos */
+/* Inicio Grid Contactate */
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 15%) 5% repeat(2, 15%) 5% repeat(2, 15%);
+    grid-template-rows: 50px repeat(3, 130px) 150px 10px;
+}
+
+.divContactate {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+/* Estilos Formulario */
+
+.formulario {
+    grid-area: 1 / 2 / 6 / 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.formContenedor {
+    width: 100%;
+}
+
+.formContenedor .row {
+    position: relative;
+    width: 100%;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.formContenedor .row .col {
+    position: relative;
+    width: 100%;
+    padding: 10 10px;
+    margin: 30px 0 10px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContenedor .row .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.formContenedor .row .inputBox input,
+.formContenedor .row .inputBox.textArea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: black;
+}
+
+.formContenedor .row .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.3s;
+    pointer-events: none;
+}
+
+.formContenedor .row .inputBox input:focus+.text,
+.formContenedor .row .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.formContenedor .row .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: 0.3s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+
+.formContenedor .row .inputBox input:focus~.line,
+.formContenedor .row .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.formContenedor .row .inputBox .textArea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.formContenedor .row .inputBox .textArea textarea {
+    height: 100%;
+    width: 100%;
+    resize: vertical;
+}
+
+.formContenedor .row .inputBox textarea:focus+.text,
+.formContenedor .row .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.formContenedor .row .inputBox textarea:focus~.line,
+.formContenedor .row .inputBox textarea:valid~.line {
+    height: 110%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+/* Fin Estilos Formulario */
+
+/* Fin Grid Contactate */
+/* Inicio Grid Datos */
+
+.grid5 {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 15%) repeat(4, 10%) repeat(2, 15%);
+    grid-template-rows: 50px repeat(3, 100px) 60px 30px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.direccion {
+    grid-area: 2 / 1 / 5 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+.redesSociales {
+    grid-area: 2 / 5 / 5 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redesIconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redesSociales a {
+    text-decoration-line: none;
+    color: orange;
+}
+
+.redesSociales div {
+    margin-left: 10px;
+}
+
+.redesSociales div ul {
+    margin-top: 5px;
+}
+
+.redesSociales p {
+    margin-top: 5px;
+}
+
+.copyright {
+    text-align: center;
+    grid-area: 6 / 4 / 7 / 6;
+}
+
+h6 {
+    border-top: solid white 1px;
+    font-size: 12px;
+}
+
+/* Fin Grid Datos */
+/* vista tablet */
+@media (min-width:600px) and (max-width:1023px) {
+
+    /* Inicio Grid index */
+    .Contenedor {
+        grid-template-columns: 15% 20% repeat(2, 15%) 20% 15%;
+        grid-template-rows: 50px 75px repeat(2, 50px) 75px 50px;
+    }
+
+    .item {
+        grid-area: 1 / 1 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .item2 {
+        grid-area: 3 / 1 / 4 / 7;
+    }
+
+    .item3 {
+        grid-area: 5 / 2 / 6 / 6;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* Fin Grid index */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: repeat(2, 50px) 100px 150px 100px 50px 100px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 7 / 4;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .textoHistoria {
+        grid-area: 3 / 4 / 7/ 7;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.textoHistoria p {
+        padding-right: 100px;
+    }
+
+    .vision {
+        grid-area: 7 / 2 / 8 / 6;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 15px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 15px;
+    }
+
+    .comercio {
+        grid-area: 7 / 2 / 8 / 6;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    /* Fin Grid Comericios */
+    /* Inicio Grid Productos */
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    .imgSponsor {
+        grid-area: 8 / 1 / 9 / 7;
+    }
+
+    /* Fin Grid Productos */
+    /* Inicio Grid Contactate */
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        grid-area: 3 / 3 / 8 / 5;
+    }
+
+    .formContenedor .row {
+        gap: 1rem;
+    }
+
+    .formContenedor .row .col {
+        align-items: none;
+        justify-content: none;
+        }
+
+    /* Fin Grid Contactate */
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 2 / 4 / 6;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 2 / 7 / 6;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+
+    /* Fin Grid Datos */
+    /* Inicio nav para tablet */
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .bar-btn {
+        padding-bottom: 300px;
+        font-size: 25px;
+        color: orange;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        transition: all .5s;
+
+    }
+
+    .nav-menu li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+
+    .nav-menu li a {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: orange;
+        transition: .3s;
+
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked~.nav-menu {
+        height: 100vh;
+    }
+
+    #check:checked~.nav-menu li {
+        display: block;
+    }
+
+    .bar-btn i {
+        display: block;
+    }
+     /* Fin nav para tablet */
+}
+
+/* vistas mobile */
+@media (min-width:319px) and (max-width:599px) {
+
+    /* Inicio Grid index */
+    .Contenedor {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: repeat(4, 50px) 30px 80px repeat(2, 30px);
+    }
+
+    .item {
+        grid-area: 1 / 2 / 3 / 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .item2 {
+        grid-area: 4 / 1 / 5 / 7;
+    }
+
+    .item3 {
+        grid-area: 6 / 2 / 8 / 6;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    /* Fin Grid index */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px repeat(2, 100px) 30px repeat(2, 100px) 30px 60px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 5 / 7;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .historia div {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .textoHistoria {
+        grid-area: 6 / 1 / 8 / 7;
+        text-align: center;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .vision {
+        grid-area: 9 / 1 / 10 / 7;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 14px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 14px;
+    }
+
+    .comercio {
+        grid-area: 6 / 1 / 8 / 7;
+        margin-bottom: 15px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Fin Grid Comericios */
+    /* Inicio Grid Productos */
+
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    #slides .slide {
+    font-size: 12px;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .imgSponsor {
+        grid-area: 7 / 1 / 9 / 7;
+        padding-top: 20px;
+    }
+
+    /* Fin Grid Productos */
+    /* Inicio Grid Contactate */
+
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        padding-top: 15px;
+        grid-area: 2 / 3 / 8 / 6;
+    }
+
+    .formContenedor .row {
+        gap: 0;
+    }
+
+    .formContenedor .row .col {
+        width: 75%;
+        padding: 0;
+        margin: 25px 0 10px;
+        align-items: none;
+        justify-content: none;
+        
+    }
+
+    .formulario div {
+        margin-top: 10px;
+    }
+
+    /* Fin Grid Contactate */
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 1 / 4 / 7;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 1 / 7 / 7;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+   /* Fin Grid Datos */
+   /* Inicio Nav Mobile */
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+
+    .bar-btn {
+        padding-bottom: 350px;
+        font-size: 25px;
+        color: orange;
+        margin-right: 20px;
+        position: fixed;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .nav-menu li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all .5s;
+    }
+
+    .nav-menu li a {
+        color: white;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .nav-menu li a.active,
+    .nav-menu li a:hover {
+        color: orange;
+        transition: .3s;
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked~.nav-menu {
+        height: 100vh;
+    }
+
+    #check:checked~.nav-menu li {
+        display: block;
+    }
+
+    .bar-btn i {
+        display: block;
+    }
+       /* Fin nav para Mobile */
+}
