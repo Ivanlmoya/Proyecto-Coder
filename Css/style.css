@@ -93,13 +93,17 @@ h2 {
 .Secciones {
     height: 600px;
     width: 100%;
-    background-color: orange;
+   /*  background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(247,155,15,1) 0%, rgba(255,136,0,1) 60%, rgba(101,63,1,1) 100%); */
+    background: rgb(255,154,0);
+background: radial-gradient(circle, rgba(255,154,0,1) 0%, rgba(255,130,4,1) 36%, rgba(221,117,12,1) 60%, rgba(199,115,26,1) 81%, rgba(163,88,9,1) 100%);
 }
 
 .Secciones h2 {
     width: 100%;
     height: 50px;
-    background-color: purple;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba(155,65,193,1) 100%);
     text-align: center;
     line-height: 50px;
     color: white;
@@ -116,7 +120,8 @@ h2 {
 .Secciones2 h2 {
     width: 100%;
     height: 50px;
-    background-color: purple;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba(155,65,193,1) 100%);
     text-align: center;
     margin-top: 5px;
     line-height: 50px;
