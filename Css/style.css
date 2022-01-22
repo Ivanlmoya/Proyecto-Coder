@@ -968,7 +968,11 @@ h6 {
     }
 
     button {
-        font-size: 14px;
+        font-size: 10px;
+    }
+
+    .imagenBotones{
+        display: none;
     }
 
     .textoHistoria {
@@ -1046,6 +1050,10 @@ h6 {
         padding-top: 20px;
     }
 
+    .logo-lomaNegra{
+        display: none;
+    }
+
     /* Fin Grid Productos */
     /* Inicio Grid Contactate */
 
@@ -1060,7 +1068,7 @@ h6 {
 
     .formulario {
         padding-top: 15px;
-        grid-area: 2 / 3 / 8 / 6;
+        grid-area: 2 / 2 / 8 / 6;
     }
 
     .formContenedor .row {
@@ -1068,7 +1076,7 @@ h6 {
     }
 
     .formContenedor .row .col {
-        width: 75%;
+        width: 100%;
         padding: 0;
         margin: 25px 0 10px;
         align-items: none;
@@ -1091,7 +1099,6 @@ h6 {
         grid-area: 2 / 1 / 4 / 7;
         text-align: center;
         padding-left: 10px;
-        padding-right: 10px;
     }
 
     .redesSociales {
