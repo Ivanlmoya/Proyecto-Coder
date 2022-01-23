@@ -5,12 +5,46 @@
     text-decoration: none;
     transition: all 0.3s;
     transform: all 0.3s;
-}
-
-/* Estilos del Index */
-li {
     list-style: none;
 }
+
+/* 
+//////////////////////////////////
+//// Estilos por secciones //////
+////////////////////////////////
+
+Vistas PC 
+
+1p-Home 
+2p-Quienes Somos
+3p-Comercios Asociados
+4p-Productos
+5p-Contactanos
+6p-Datos
+
+Vistas Tablet 
+
+1t-Home 
+2t-Quienes Somos
+3t-Comercios Asociados
+4t-Productos
+5t-Contactanos
+6t-Datos
+
+Vistas Mobile
+
+1m-Home 
+2m-Quienes Somos
+3m-Comercios Asociados
+4m-Productos
+5m-Contactanos
+6m-Datos
+
+*/
+
+/* /////////////////
+//// 1p-Home //////
+////////////////// */
 
 /* Estilos del Nav */
 nav {
@@ -59,6 +93,7 @@ h2 {
     font-size: 25px;
 }
 
+/* Grid del Home con imagen de fondo */
 .Contenedor {
     background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/slideee-1.jpg);
     background-position-y: 40%;
@@ -88,22 +123,20 @@ h2 {
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* fin estilos Index */
+/* fin estilos Home */
 /* Estilos de las secciones*/
 .Secciones {
     height: 600px;
     width: 100%;
-   /*  background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(247,155,15,1) 0%, rgba(255,136,0,1) 60%, rgba(101,63,1,1) 100%); */
-    background: rgb(255,154,0);
-background: radial-gradient(circle, rgba(255,154,0,1) 0%, rgba(255,130,4,1) 36%, rgba(221,117,12,1) 60%, rgba(199,115,26,1) 81%, rgba(163,88,9,1) 100%);
+    background: rgb(255, 154, 0);
+    background: radial-gradient(circle, rgba(255, 154, 0, 1) 0%, rgba(255, 130, 4, 1) 36%, rgba(221, 117, 12, 1) 60%, rgba(199, 115, 26, 1) 81%, rgba(163, 88, 9, 1) 100%);
 }
 
 .Secciones h2 {
     width: 100%;
     height: 50px;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba(155,65,193,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
     text-align: center;
     line-height: 50px;
     color: white;
@@ -120,8 +153,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba
 .Secciones2 h2 {
     width: 100%;
     height: 50px;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba(155,65,193,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
     text-align: center;
     margin-top: 5px;
     line-height: 50px;
@@ -129,8 +162,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
+/* /////////////////////////
+//// 2p-Quienes Somos /////
+////////////////////////// */
 /* Inicio Grid Quienes somos */
-
 .grid1 {
     display: grid;
     grid-template-columns: repeat(3, 15%) repeat(2, 20%) 15%;
@@ -140,6 +175,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,8,131,1) 0%, rgba
 .divQuienes {
     grid-area: 1 / 1 / 2 / 3;
 }
+
+/* Estilos de historias */
 
 .historia {
     grid-area: 2 / 1 / 6 / 3;
@@ -181,6 +218,9 @@ button {
 }
 
 /* Fin Grid Quienes Somos */
+/* //////////////////////////////
+//// 3p-Comercios Asociados ////
+/////////////////////////////// */
 /* Inicio Grid Comercios Asociados */
 .grid2 {
     display: grid;
@@ -192,6 +232,7 @@ button {
     grid-area: 1 / 1 / 2 / 3
 }
 
+/* Estilos de mapa */
 .mapaArgentina {
     grid-area: 1/ 1 / 6 / 3;
     display: flex;
@@ -202,6 +243,7 @@ button {
     font-size: 18px;
 }
 
+/* Textos Comercios asociados */
 .textoComercios {
     text-align: center;
     display: inline-block;
@@ -213,6 +255,7 @@ button {
     font-size: 18px;
 }
 
+/* Texto que aparece solo cuando se elige un comercio asociado */
 .comercio {
     background-color: white;
     grid-area: 2 / 7 / 5/ 9;
@@ -226,6 +269,9 @@ button {
 }
 
 /* Fin Grid Comercios Asociados */
+/* ////////////////////
+//// 4p-Productos ////
+///////////////////// */
 /* Inicio Grid Productos */
 .grid3 {
     display: grid;
@@ -245,6 +291,7 @@ button {
     background-size: contain;
     background-repeat: no-repeat;
     background-position-x: center;
+    z-index: 0;
 }
 
 /* Incio Carrousel */
@@ -312,15 +359,18 @@ button {
     color: #fff;
 }
 
-#slides .slide_1, #slides .slide_2,#slides .slide_3,#slides .slide_4 {
-background-size: contain;
-background-repeat: no-repeat;
-background-position-x: center;
-color: black;
-display:flex;
-align-items: flex-end;
-justify-content: center;
-padding-bottom: 20px;
+#slides .slide_1,
+#slides .slide_2,
+#slides .slide_3,
+#slides .slide_4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
 #slides .slide_1 {
@@ -401,7 +451,7 @@ padding-bottom: 20px;
 }
 
 /* Fin Carrousel */
-
+/* Imagenes Sponsors */
 .sponsors {
     grid-area: 6 / 4 / 7 / 6;
     text-align: center;
@@ -420,6 +470,9 @@ padding-bottom: 20px;
 }
 
 /* Fin Grid Productos */
+/* ///////////////////////
+//// 5p-Contactanos /////
+//////////////////////// */
 /* Inicio Grid Contactate */
 .grid4 {
     display: grid;
@@ -482,7 +535,6 @@ padding-bottom: 20px;
     border: none;
     outline: none;
     font-size: 18px;
-    padding: 0 10px;
     z-index: 1;
     color: black;
 }
@@ -516,7 +568,6 @@ padding-bottom: 20px;
     border-radius: 2px;
     pointer-events: none;
 }
-
 
 .formContenedor .row .inputBox input:focus~.line,
 .formContenedor .row .inputBox input:valid~.line {
@@ -560,8 +611,10 @@ input[type="submit"] {
 }
 
 /* Fin Estilos Formulario */
-
 /* Fin Grid Contactate */
+/* /////////////////
+//// 6p-Datos /////
+////////////////// */
 /* Inicio Grid Datos */
 
 .grid5 {
@@ -583,6 +636,7 @@ input[type="submit"] {
     padding-left: 20px;
 }
 
+/* Estilos Redes Sociales */
 .redesSociales {
     grid-area: 2 / 5 / 5 / 9;
     display: flex;
@@ -617,6 +671,7 @@ input[type="submit"] {
     margin-top: 5px;
 }
 
+/* Fin estilos Redes Sociales */
 .copyright {
     text-align: center;
     grid-area: 6 / 4 / 7 / 6;
@@ -631,7 +686,10 @@ h6 {
 /* vista tablet */
 @media (min-width:600px) and (max-width:1023px) {
 
-    /* Inicio Grid index */
+    /* /////////////////
+    //// 1t-Home //////
+    ////////////////// */
+    /* Inicio Grid Home */
     .Contenedor {
         grid-template-columns: 15% 20% repeat(2, 15%) 20% 15%;
         grid-template-rows: 50px 75px repeat(2, 50px) 75px 50px;
@@ -676,147 +734,6 @@ h6 {
         font-size: 15px;
     }
 
-    /* Fin Grid index */
-    .Secciones {
-        height: 600px;
-    }
-
-    .Secciones2 {
-        height: 600px;
-    }
-
-    /* Inicio Grid Quienes Somos */
-    .grid1 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: repeat(2, 50px) 100px 150px 100px 50px 100px;
-    }
-
-    .divQuienes {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .historia {
-        grid-area: 3 / 1 / 7 / 4;
-        font-size: 15px;
-    }
-
-    button {
-        font-size: 13px;
-    }
-
-    .textoHistoria {
-        grid-area: 3 / 4 / 7/ 7;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    div.textoHistoria p {
-        padding-right: 100px;
-    }
-
-    .vision {
-        grid-area: 7 / 2 / 8 / 6;
-        text-align: center;
-        font-size: 16px;
-    }
-
-    /* Fin Grid Quienes Somos */
-    /* Inicio Grid Comercios */
-    .grid2 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
-    }
-
-    .divComercios {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .mapaArgentina {
-        grid-area: 3 / 1 / 6 / 4;
-        font-size: 15px;
-    }
-
-    .textoComercios {
-        grid-area: 3 / 4 / 6 / 7;
-        font-size: 15px;
-    }
-
-    .comercio {
-        grid-area: 7 / 2 / 8 / 6;
-        margin-bottom: 15px;
-        font-size: 15px;
-    }
-
-    /* Fin Grid Comericios */
-    /* Inicio Grid Productos */
-    .grid3 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
-    }
-
-    .divProductos {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .productos {
-        grid-area: 3 / 2 / 6 / 6;
-    }
-
-    .sponsors {
-        grid-area: 7 / 3 / 7 / 5;
-        line-height: 20px;
-        padding-bottom: 10px;
-    }
-
-    .imgSponsor {
-        grid-area: 8 / 1 / 9 / 7;
-    }
-
-    /* Fin Grid Productos */
-    /* Inicio Grid Contactate */
-    .grid4 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
-    }
-
-    .divContactate {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .formulario {
-        grid-area: 3 / 3 / 8 / 5;
-    }
-
-    .formContenedor .row {
-        gap: 1rem;
-    }
-
-    .formContenedor .row .col {
-        align-items: none;
-        justify-content: none;
-        }
-
-    /* Fin Grid Contactate */
-    /* Inicio Grid Datos */
-    .grid5 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
-    }
-
-    .direccion {
-        grid-area: 2 / 2 / 4 / 6;
-    }
-
-    .redesSociales {
-        grid-area: 5 / 2 / 7 / 6;
-        text-align: center;
-    }
-
-    .copyright {
-        grid-area: 8 / 3 / 9 / 5;
-    }
-
-    /* Fin Grid Datos */
     /* Inicio nav para tablet */
     nav {
         height: 100px;
@@ -844,6 +761,7 @@ h6 {
         background: rgba(0, 0, 0, 0.95);
         text-align: center;
         transition: all .5s;
+        z-index: 1;
 
     }
 
@@ -883,13 +801,175 @@ h6 {
     .bar-btn i {
         display: block;
     }
-     /* Fin nav para tablet */
+
+    /* Fin nav para tablet */
+    /* Fin Grid home */
+    /* Inicio estilos de secciones */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+
+    /* Fin estilos de secciones */
+    /* /////////////////////////
+    //// 2t-Quienes Somos /////
+    ////////////////////////// */
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: repeat(2, 50px) 100px 150px 100px 50px 100px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 7 / 4;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .textoHistoria {
+        grid-area: 3 / 4 / 7/ 7;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.textoHistoria p {
+        padding-right: 100px;
+    }
+
+    .vision {
+        grid-area: 7 / 2 / 8 / 6;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* ///////////////////////////////
+    //// 3t-Comercios Asociados /////
+    ////////////////////////////////*/
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 15px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 15px;
+    }
+
+    .comercio {
+        grid-area: 7 / 2 / 8 / 6;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    /* Fin Grid Comericios */
+    /* ////////////////////
+    //// 4t-Productos /////
+    //////////////////////*/
+    /* Inicio Grid Productos */
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    .imgSponsor {
+        grid-area: 8 / 1 / 9 / 7;
+    }
+
+    /* Fin Grid Productos */
+    /* /////////////////////
+    //// 5t-Contactanos ///
+    //////////////////////*/
+    /* Inicio Grid Contactate */
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        grid-area: 3 / 3 / 8 / 5;
+    }
+
+    .formContenedor .row {
+        gap: 1rem;
+    }
+
+    .formContenedor .row .col {
+        align-items: none;
+        justify-content: none;
+    }
+
+    /* Fin Grid Contactate */
+    /* ///////////////
+    //// 6t-Datos ///
+    ////////////////*/
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 2 / 4 / 6;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 2 / 7 / 6;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+
+    /* Fin Grid Datos */
 }
 
 /* vistas mobile */
 @media (min-width:319px) and (max-width:599px) {
 
-    /* Inicio Grid index */
+    /* //////////////
+    //// 1m-Home ///
+    ///////////////*/
+    /* Inicio Grid Home */
     .Contenedor {
         grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
         grid-template-rows: repeat(4, 50px) 30px 80px repeat(2, 30px);
@@ -934,183 +1014,7 @@ h6 {
         font-size: 15px;
     }
 
-    /* Fin Grid index */
-    .Secciones {
-        height: 600px;
-    }
-
-    .Secciones2 {
-        height: 600px;
-    }
-
-    /* Inicio Grid Quienes Somos */
-    .grid1 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px repeat(2, 100px) 30px repeat(2, 100px) 30px 60px;
-    }
-
-    .divQuienes {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .historia {
-        grid-area: 3 / 1 / 5 / 7;
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .historia div {
-        margin-left: 10px;
-        margin-right: 5px;
-    }
-
-    button {
-        font-size: 10px;
-    }
-
-    .imagenBotones{
-        display: none;
-    }
-
-    .textoHistoria {
-        grid-area: 6 / 1 / 8 / 7;
-        text-align: center;
-        font-size: 13px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .vision {
-        grid-area: 9 / 1 / 10 / 7;
-        font-size: 14px;
-        text-align: center;
-    }
-
-    /* Fin Grid Quienes Somos */
-    /* Inicio Grid Comercios */
-    .grid2 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
-    }
-
-    .divComercios {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .mapaArgentina {
-        grid-area: 3 / 1 / 6 / 4;
-        font-size: 14px;
-    }
-
-    .textoComercios {
-        grid-area: 3 / 4 / 6 / 7;
-        font-size: 14px;
-    }
-
-    .comercio {
-        grid-area: 6 / 1 / 8 / 7;
-        margin-bottom: 15px;
-        font-size: 13px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    /* Fin Grid Comericios */
-    /* Inicio Grid Productos */
-
-    .grid3 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
-    }
-
-    .divProductos {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .productos {
-        grid-area: 3 / 2 / 6 / 6;
-    }
-
-    #slides .slide {
-    font-size: 12px;
-    }
-
-    .sponsors {
-        grid-area: 7 / 3 / 7 / 5;
-        line-height: 20px;
-        padding-bottom: 10px;
-    }
-
-
-    .imgSponsor {
-        grid-area: 7 / 1 / 9 / 7;
-        padding-top: 20px;
-    }
-
-    .logo-lomaNegra{
-        display: none;
-    }
-
-    /* Fin Grid Productos */
-    /* Inicio Grid Contactate */
-
-    .grid4 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
-    }
-
-    .divContactate {
-        grid-area: 1 / 2 / 2 / 6;
-    }
-
-    .formulario {
-        padding-top: 15px;
-        grid-area: 2 / 2 / 8 / 6;
-    }
-
-    .formContenedor .row {
-        gap: 0;
-    }
-
-    .formContenedor .row .col {
-        width: 100%;
-        padding: 0;
-        margin: 25px 0 10px;
-        align-items: none;
-        justify-content: none;
-        
-    }
-
-    .formulario div {
-        margin-top: 10px;
-    }
-
-    /* Fin Grid Contactate */
-    /* Inicio Grid Datos */
-    .grid5 {
-        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
-        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
-    }
-
-    .direccion {
-        grid-area: 2 / 1 / 4 / 7;
-        text-align: center;
-        padding-left: 10px;
-    }
-
-    .redesSociales {
-        grid-area: 5 / 1 / 7 / 7;
-        text-align: center;
-    }
-
-    .copyright {
-        grid-area: 8 / 3 / 9 / 5;
-    }
-   /* Fin Grid Datos */
-   /* Inicio Nav Mobile */
+    /* Inicio Nav Mobile */
     nav {
         height: 100px;
         width: 100%;
@@ -1137,6 +1041,7 @@ h6 {
         background: rgba(0, 0, 0, 0.95);
         text-align: center;
         transition: all .5s;
+        z-index: 1;
     }
 
     .nav-menu li {
@@ -1174,5 +1079,197 @@ h6 {
     .bar-btn i {
         display: block;
     }
-       /* Fin nav para Mobile */
+
+    /* Fin nav para Mobile */
+    /* Fin Grid Home */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+     /* //////////////////////
+    //// 2m-Quienes Somos ///
+    ////////////////////////*/
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px repeat(2, 100px) 30px repeat(2, 100px) 30px 60px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 5 / 7;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .historia div {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+
+    .imagenBotones {
+        display: none;
+    }
+
+    .textoHistoria {
+        grid-area: 6 / 1 / 8 / 7;
+        text-align: center;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .vision {
+        grid-area: 9 / 1 / 10 / 7;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* ///////////////////
+    //// 3m-Comercios ///
+    ////////////////////*/
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 14px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 14px;
+    }
+
+    .comercio {
+        grid-area: 6 / 1 / 8 / 7;
+        margin-bottom: 15px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Fin Grid Comericios */
+    /* ///////////////////
+    //// 4m-Productos ///
+    ////////////////////*/
+    /* Inicio Grid Productos */
+
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    #slides .slide {
+        font-size: 12px;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .imgSponsor {
+        grid-area: 7 / 1 / 9 / 7;
+        padding-top: 20px;
+    }
+
+    .logo-lomaNegra {
+        display: none;
+    }
+
+    /* Fin Grid Productos */
+/* /////////////////////////
+    //// 5m-Contactanos ///
+    //////////////////////*/
+    /* Inicio Grid Contactate */
+
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        padding-top: 15px;
+        grid-area: 2 / 2 / 8 / 6;
+    }
+
+    .formContenedor .row {
+        gap: 0;
+    }
+
+    .formContenedor .row .col {
+        width: 100%;
+        padding: 0;
+        margin: 25px 0 10px;
+        align-items: none;
+        justify-content: none;
+
+    }
+
+    .formulario div {
+        margin-top: 10px;
+    }
+
+    /* Fin Grid Contactate */
+     /* //////////////
+    //// 6m-Datos ///
+    ////////////////*/
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 1 / 4 / 7;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 1 / 7 / 7;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+
+    /* Fin Grid Datos */
 }
