@@ -117,8 +117,12 @@ h2 {
 .item3 {
     background-color: rgba(166, 21, 185, 0.507);
     color: white;
+    display:flex;
     margin-bottom: 10px;
     overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     grid-area: 5 / 1 / 6 / 5;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -193,9 +197,19 @@ h2 {
     text-align: center;
 }
 
-button {
-    font-size: 16px;
+.botones button {
+    margin: 0 auto;
+    font-size: 1.0rem;
+    padding: 0.5rem 0.5rem;
+    border-radius:50%;
+    background: linear-gradient(
+        90deg
+        , rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
 }
+
 
 .textoHistoria {
     grid-area: 2 / 4 / 5 / 6;
