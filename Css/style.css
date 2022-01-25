@@ -117,7 +117,7 @@ h2 {
 .item3 {
     background-color: rgba(166, 21, 185, 0.507);
     color: white;
-    display:flex;
+    display: flex;
     margin-bottom: 10px;
     overflow: hidden;
     text-align: center;
@@ -201,10 +201,8 @@ h2 {
     margin: 0 auto;
     font-size: 1.0rem;
     padding: 0.5rem 0.5rem;
-    border-radius:50%;
-    background: linear-gradient(
-        90deg
-        , rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
     border: 1px solid transparent;
     color: #ffffff;
     font-weight: 300;
@@ -1103,7 +1101,8 @@ h6 {
     .Secciones2 {
         height: 600px;
     }
-     /* //////////////////////
+
+    /* //////////////////////
     //// 2m-Quienes Somos ///
     ////////////////////////*/
     /* Inicio Grid Quienes Somos */
@@ -1224,7 +1223,7 @@ h6 {
     }
 
     /* Fin Grid Productos */
-/* /////////////////////////
+    /* /////////////////////////
     //// 5m-Contactanos ///
     //////////////////////*/
     /* Inicio Grid Contactate */
@@ -1261,7 +1260,7 @@ h6 {
     }
 
     /* Fin Grid Contactate */
-     /* //////////////
+    /* //////////////
     //// 6m-Datos ///
     ////////////////*/
     /* Inicio Grid Datos */
