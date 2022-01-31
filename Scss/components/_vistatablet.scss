@@ -1,0 +1,272 @@
+@media (min-width:600px) and (max-width:1023px) {
+
+    /* /////////////////
+    //// 1t-Home //////
+    ////////////////// */
+    /* Inicio Grid Home */
+    .Contenedor {
+        grid-template-columns: 15% 20% repeat(2, 15%) 20% 15%;
+        grid-template-rows: 50px 75px repeat(2, 50px) 75px 50px;
+    }
+
+    .item {
+        grid-area: 1 / 1 / 3 / 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .item2 {
+        grid-area: 3 / 1 / 4 / 7;
+    }
+
+    .item3 {
+        grid-area: 5 / 2 / 6 / 6;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        ul {
+            text-align: center;
+            li {
+                padding-left: 3px;
+                padding-right: 3px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    
+    }
+
+    .bar-btn {
+        padding-bottom: 300px;
+        font-size: 25px;
+        color: orange;
+        margin-right: 20px;
+        cursor: pointer;
+        display: block;
+        position: fixed;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+        li {
+            display: none;
+            line-height: 30px;
+            margin: 50px 0;
+            transition: all .5s;
+            a {
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:hover{
+                    color: orange;
+                    transition: .3s;
+                }
+                &:active{
+                    color: orange;
+                    transition: .3s;
+                }
+            }
+        }
+
+    }
+
+    #check {
+        display: none;
+        &:checked~.nav-menu {
+            height: 100vh;
+            li {
+                display: block;
+            }
+        }
+    }
+
+    .bar-btn i {
+        display: block;
+    }
+
+    /* Fin nav para tablet */
+    /* Fin Grid home */
+    /* Inicio estilos de secciones */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+
+    /* Fin estilos de secciones */
+    /* /////////////////////////
+    //// 2t-Quienes Somos /////
+    ////////////////////////// */
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: repeat(2, 50px) 100px 150px 100px 50px 100px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 7 / 4;
+        font-size: 15px;
+    }
+
+    button {
+        font-size: 13px;
+    }
+
+    .textoHistoria {
+        grid-area: 3 / 4 / 7/ 7;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.textoHistoria p {
+        padding-right: 100px;
+    }
+
+    .vision {
+        grid-area: 7 / 2 / 8 / 6;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* ///////////////////////////////
+    //// 3t-Comercios Asociados /////
+    ////////////////////////////////*/
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 15px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 15px;
+    }
+
+    .comercio {
+        grid-area: 7 / 2 / 8 / 6;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    /* Fin Grid Comericios */
+    /* ////////////////////
+    //// 4t-Productos /////
+    //////////////////////*/
+    /* Inicio Grid Productos */
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    .imgSponsor {
+        grid-area: 8 / 1 / 9 / 7;
+    }
+
+    /* Fin Grid Productos */
+    /* /////////////////////
+    //// 5t-Contactanos ///
+    //////////////////////*/
+    /* Inicio Grid Contactate */
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        grid-area: 3 / 3 / 8 / 5;
+    }
+
+    .formContenedor .row {
+        gap: 1rem;
+        .col {
+            align-items: none;
+            justify-content: none;
+        }
+    
+    }
+    
+    /* Fin Grid Contactate */
+    /* ///////////////
+    //// 6t-Datos ///
+    ////////////////*/
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 2 / 4 / 6;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 2 / 7 / 6;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+
+    /* Fin Grid Datos */
+}

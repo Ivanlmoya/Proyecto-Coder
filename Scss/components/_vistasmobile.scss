@@ -1,0 +1,312 @@
+/* vistas mobile */
+@media (min-width:319px) and (max-width:599px) {
+
+    /* //////////////
+    //// 1m-Home ///
+    ///////////////*/
+    /* Inicio Grid Home */
+    .Contenedor {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: repeat(4, 50px) 30px 80px repeat(2, 30px);
+    }
+
+    .item {
+        grid-area: 1 / 2 / 3 / 6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        flex-wrap: nowrap;
+    }
+
+    .item2 {
+        grid-area: 4 / 1 / 5 / 7;
+    }
+
+    .item3 {
+        grid-area: 6 / 2 / 8 / 6;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Inicio Nav Mobile */
+    nav {
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        ul {
+            text-align: center;
+            li {
+                padding-left: 3px;
+                padding-right: 3px;
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .bar-btn {
+        padding-bottom: 350px;
+        font-size: 25px;
+        color: orange;
+        margin-right: 20px;
+        position: fixed;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 100%;
+        height: 0vh;
+        top: 100px;
+        background: rgba(0, 0, 0, 0.95);
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+        li {
+            display: none;
+            line-height: 30px;
+            margin: 50px 0;
+            transition: all .5s;
+            a {
+                color: white;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+                &:active{
+                    color: orange;
+                    transition: .3s;
+                }
+                &:hover{
+                    color: orange;
+                    transition: .3s;
+                }
+            }
+        
+        }
+    }
+
+    #check {
+        display: none;
+    }
+
+    #check:checked~.nav-menu {
+        height: 100vh;
+        li {
+            display: block;
+        }
+    }
+
+    .bar-btn i {
+        display: block;
+    }
+
+    /* Fin nav para Mobile */
+    /* Fin Grid Home */
+    .Secciones {
+        height: 600px;
+    }
+
+    .Secciones2 {
+        height: 600px;
+    }
+
+    /* //////////////////////
+    //// 2m-Quienes Somos ///
+    ////////////////////////*/
+    /* Inicio Grid Quienes Somos */
+    .grid1 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px repeat(2, 100px) 30px repeat(2, 100px) 30px 60px;
+    }
+
+    .divQuienes {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .historia {
+        grid-area: 3 / 1 / 5 / 7;
+        display: flex;
+        flex-direction: row;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .historia div {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+
+    button {
+        font-size: 10px;
+    }
+
+    .imagenBotones {
+        display: none;
+        padding: none;
+    }
+
+    .textoHistoria {
+        grid-area: 6 / 1 / 8 / 7;
+        text-align: center;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .vision {
+        grid-area: 9 / 1 / 10 / 7;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Fin Grid Quienes Somos */
+    /* ///////////////////
+    //// 3m-Comercios ///
+    ////////////////////*/
+    /* Inicio Grid Comercios */
+    .grid2 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 100px 180px 100px 30px 110px;
+    }
+
+    .divComercios {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .mapaArgentina {
+        grid-area: 3 / 1 / 6 / 4;
+        font-size: 14px;
+    }
+
+    .textoComercios {
+        grid-area: 3 / 4 / 6 / 7;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .comercio {
+        grid-area: 6 / 1 / 8 / 7;
+        margin-bottom: 15px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* Fin Grid Comericios */
+    /* ///////////////////
+    //// 4m-Productos ///
+    ////////////////////*/
+    /* Inicio Grid Productos */
+
+    .grid3 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 30px 100px;
+    }
+
+    .divProductos {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .productos {
+        grid-area: 3 / 2 / 6 / 6;
+    }
+
+    #slides .slide {
+        font-size: 12px;
+        background-position-y: center;
+    }
+
+    .sponsors {
+        grid-area: 7 / 3 / 7 / 5;
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+
+    .imgSponsor {
+        grid-area: 7 / 1 / 9 / 7;
+        padding-top: 20px;
+    }
+
+    .logo-lomaNegra {
+        display: none;
+    }
+
+    /* Fin Grid Productos */
+    /* /////////////////////////
+    //// 5m-Contactanos ///
+    //////////////////////*/
+    /* Inicio Grid Contactate */
+
+    .grid4 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 50px 30px 130px 180px 30px 50px 100px 30px;
+    }
+
+    .divContactate {
+        grid-area: 1 / 2 / 2 / 6;
+    }
+
+    .formulario {
+        padding-top: 15px;
+        grid-area: 2 / 2 / 8 / 6;
+        div {
+            margin-top: 10px;
+        }
+    
+    }
+
+    .formContenedor .row {
+        gap: 0;
+        .col {
+            width: 100%;
+            padding: 0;
+            margin: 25px 0 10px;
+            align-items: none;
+            justify-content: none;
+    
+        }
+    }
+
+    /* Fin Grid Contactate */
+    /* //////////////
+    //// 6m-Datos ///
+    ////////////////*/
+    /* Inicio Grid Datos */
+    .grid5 {
+        grid-template-columns: 10% 15% repeat(2, 25%) 15% 10%;
+        grid-template-rows: 30px repeat(2, 150px) 30px repeat(2, 80px) repeat(2, 30px);
+    }
+
+    .direccion {
+        grid-area: 2 / 1 / 4 / 7;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .redesSociales {
+        grid-area: 5 / 1 / 7 / 7;
+        text-align: center;
+    }
+
+    .copyright {
+        grid-area: 8 / 3 / 9 / 5;
+    }
+
+    /* Fin Grid Datos */
+}

@@ -1,0 +1,129 @@
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(2, 15%) 5% repeat(2, 15%) 5% repeat(2, 15%);
+    grid-template-rows: 50px repeat(3, 130px) 150px 10px;
+}
+
+.divContactate {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+/* Estilos Formulario */
+
+.formulario {
+    grid-area: 1 / 2 / 6 / 8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.formContenedor {
+    width: 100%;
+
+    .row {
+        position: relative;
+        width: 100%;
+        display: grid;
+        gap: 5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+        .col {
+            position: relative;
+            width: 100%;
+            padding: 10 10px;
+            margin: 30px 0 10px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .inputBox {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            color: white;
+            .text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                line-height: 40px;
+                font-size: 18px;
+                padding: 0 10px;
+                display: block;
+                transition: 0.3s;
+                pointer-events: none;
+            }
+
+            input {
+                @extend %form;
+            }
+
+            .line {
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: white;
+                transition: 0.3s;
+                border-radius: 2px;
+                pointer-events: none;
+            }
+            .textArea {
+                position: relative;
+                width: 100%;
+                height: 100px;
+                padding: 10px 0;
+                textarea {
+                    height: 100%;
+                    width: 100%;
+                    resize: vertical;
+                }
+            }
+
+        }
+        .inputBox.textArea{
+            textarea{
+                @extend %form;
+            }
+        }
+    }
+}
+
+
+.formContenedor .row .inputBox input:focus+.text,
+.formContenedor .row .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.formContenedor .row .inputBox input:focus~.line,
+.formContenedor .row .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.formContenedor .row .inputBox textarea:focus+.text,
+.formContenedor .row .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.formContenedor .row .inputBox textarea:focus~.line,
+.formContenedor .row .inputBox textarea:valid~.line {
+    height: 110%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}

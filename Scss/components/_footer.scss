@@ -1,0 +1,61 @@
+
+.grid5 {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 15%) repeat(4, 10%) repeat(2, 15%);
+    grid-template-rows: 50px repeat(3, 100px) 60px 30px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.direccion {
+    grid-area: 2 / 1 / 5 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-left: 20px;
+}
+
+
+.redesSociales {
+    grid-area: 2 / 5 / 5 / 9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redesIconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.redesSociales a {
+    text-decoration-line: none;
+    color: orange;
+}
+
+.redesSociales div {
+    margin-left: 10px;
+}
+
+.redesSociales div ul {
+    margin-top: 5px;
+}
+
+.redesSociales p {
+    margin-top: 5px;
+}
+
+/* Fin estilos Redes Sociales */
+.copyright {
+    text-align: center;
+    grid-area: 6 / 4 / 7 / 6;
+}
+

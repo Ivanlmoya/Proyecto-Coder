@@ -1,0 +1,69 @@
+.Secciones {
+    height: 600px;
+    width: 100%;
+    background: $colorbackground;
+}
+
+.Secciones h2 {
+    width: 100%;
+    height: 50px;
+    background: $colorh2;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    margin-top: 5px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 15%) repeat(2, 20%) 15%;
+    grid-template-rows: 50px repeat(2, 160px) repeat(2, 115px);
+}
+
+.divQuienes {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+/* Estilos de historias */
+
+.historia {
+    grid-area: 2 / 1 / 6 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.botones {
+    text-align: center;
+}
+
+.botones button {
+    margin: 0 auto;
+    font-size: 1.0rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
+    border: 1px solid transparent;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+
+.textoHistoria {
+    grid-area: 2 / 4 / 5 / 6;
+    flex-direction: column;
+    font-size: 18px;
+    @extend %flex;
+}
+
+.vision {
+    grid-area: 5 / 4 / 6 / 6;
+    @extend %flex;
+    flex-direction: column;
+    font-size: 18px;
+}
