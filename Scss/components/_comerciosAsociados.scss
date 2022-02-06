@@ -1,3 +1,4 @@
+@import '../base/mixin';
 .Secciones2 {
     height: 600px;
     width: 100%;
@@ -29,10 +30,9 @@
 /* Estilos de mapa */
 .mapaArgentina {
     grid-area: 1/ 1 / 6 / 3;
-    flex-direction: column;
+    @include direccion(column,18px);
     flex-wrap: nowrap;
     @extend %flex;
-    font-size: 18px;
 }
 
 /* Textos Comercios asociados */
@@ -40,8 +40,7 @@
     display: inline-block;
     grid-area: 2 / 4 / 5 / 6;
     @extend %flex;
-    flex-direction: column;
-    font-size: 18px;
+    @include direccion(column,18px);
 }
 
 /* Texto que aparece solo cuando se elige un comercio asociado */
@@ -49,8 +48,7 @@
     background-color: white;
     grid-area: 2 / 7 / 5/ 9;
     @extend %flex;
-    flex-direction: column;
+    @include direccion(column,16px);
     padding: 2px;
-    font-size: 16px;
     margin-top: 10px;
 }

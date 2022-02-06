@@ -1,0 +1,4 @@
+@mixin direccion ($direccion,$font) {
+    flex-direction: $direccion;
+    font-size: $font;
+}

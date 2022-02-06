@@ -1,5 +1,5 @@
 /* Colores de fondo */
-.comercio, .textoComercios, .mapaArgentina, .vision, .textoHistoria, .item3 {
+.redesSociales, .comercio, .textoComercios, .mapaArgentina, .vision, .textoHistoria, .item3 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -53,7 +53,7 @@ h6 {
   font-size: 12px;
 }
 
-.comercio, .textoComercios, .mapaArgentina, .vision, .textoHistoria, .item3 {
+.redesSociales, .comercio, .textoComercios, .mapaArgentina, .vision, .textoHistoria, .item3 {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -195,7 +195,7 @@ nav ul li a:hover {
   border-radius: 50%;
   background: linear-gradient(90deg, #020024 0%, #750883 0%, #9b41c1 100%);
   border: 1px solid transparent;
-  color: #ffffff;
+  color: white;
   font-weight: 300;
 }
 
@@ -243,8 +243,8 @@ nav ul li a:hover {
 .mapaArgentina {
   grid-area: 1/1/6/3;
   flex-direction: column;
-  flex-wrap: nowrap;
   font-size: 18px;
+  flex-wrap: nowrap;
 }
 
 /* Textos Comercios asociados */
@@ -260,8 +260,8 @@ nav ul li a:hover {
   background-color: white;
   grid-area: 2/7/5/9;
   flex-direction: column;
-  padding: 2px;
   font-size: 16px;
+  padding: 2px;
   margin-top: 10px;
 }
 
@@ -549,8 +549,6 @@ input[type=submit] {
   display: grid;
   grid-template-columns: repeat(2, 15%) repeat(4, 10%) repeat(2, 15%);
   grid-template-rows: 50px repeat(3, 100px) 60px 30px;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
 }
 
 .direccion {
@@ -564,11 +562,7 @@ input[type=submit] {
 
 .redesSociales {
   grid-area: 2/5/5/9;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .redesIconos {

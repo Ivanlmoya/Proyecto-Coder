@@ -1,3 +1,4 @@
+@import'../base/map';
 .Secciones {
     height: 600px;
     width: 100%;
@@ -49,7 +50,7 @@
     border-radius: 50%;
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(117, 8, 131, 1) 0%, rgba(155, 65, 193, 1) 100%);
     border: 1px solid transparent;
-    color: #ffffff;
+    color: map-get($background,fondo );
     font-weight: 300;
 }
 
