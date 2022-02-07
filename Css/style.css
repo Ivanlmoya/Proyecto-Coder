@@ -48,7 +48,7 @@ h2 {
   font-size: 25px;
 }
 
-h6 {
+h5 {
   border-top: solid white 1px;
   font-size: 12px;
 }
@@ -110,7 +110,7 @@ nav ul li a:hover {
 }
 
 .Contenedor {
-  background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/slideee-1.jpg);
+  background-image: url(/Images/slideee-1-min.jpg);
   background-position-y: 40%;
   background-size: cover;
   display: grid;
@@ -357,19 +357,19 @@ nav ul li a:hover {
 }
 
 #slides .slide_1 {
-  background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Enduido_10L-1024x1024.jpg);
+  background-image: url(/Images/Enduido-min.jpg);
 }
 
 #slides .slide_2 {
-  background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Latex_Interior_20L-1024x1024.jpg);
+  background-image: url(/Images/Latex-min.jpg);
 }
 
 #slides .slide_3 {
-  background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Membrana-PU_20Kg-1024x1024.jpg);
+  background-image: url(/Images/Membranap-min.jpg);
 }
 
 #slides .slide_4 {
-  background-image: url(https://www.redcopmaco.com/wp-content/uploads/2018/08/Copmaco_Membrana_20Kg-1024x1024.jpg);
+  background-image: url(/Images/Membrana-min.jpg);
 }
 
 #controls {
