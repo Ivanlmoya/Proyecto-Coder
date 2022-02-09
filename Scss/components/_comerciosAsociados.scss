@@ -37,10 +37,15 @@
 
 /* Textos Comercios asociados */
 .textoComercios {
-    display: inline-block;
-    grid-area: 2 / 4 / 5 / 6;
+    grid-area: 2 / 5 / 5 / 8;
     @extend %flex;
     @include direccion(column,18px);
+    justify-content: space-around;
+}
+
+.textoComercios h5 {
+    border-top: none;
+    font-weight: bold;
 }
 
 /* Texto que aparece solo cuando se elige un comercio asociado */

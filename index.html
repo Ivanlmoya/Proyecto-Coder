@@ -17,6 +17,9 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
     </style>
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="shortcut icon" href="/Images/cropped-favicon-192x192.ico" type="image/x-icon">
     <title>Red Copmaco - Cooperativa dedicada a la construccion.</title>
 </head>
@@ -937,19 +940,347 @@
             <!-- Fin svg del mapa -->
             <!-- Textos de los comercios asociados eventualmente se agregaran para que se muestren solo los de la provincias seleccionada -->
             <div id="Socio1" class="textoComercios">
-                <a href="#Socio1">Corralón Los Amigos.</a>
-                <p>Buenos Aires - America</p>
-                <a href="#Socio2">El Guaraní.</a>
-                <p>Buenos Aires - San Cayetano.</p>
-            </div>
-            <!-- Detalle del comercio seleccionado -->
-            <div class="comercio">
-                <h4>Corralón Los Amigos.</h4>
-                <p>
-                    Dr. Francisco Raul Bonfi 580. (02337) 452019 – (02337) 404750.
-                    losamidos@jsnet.com.ar
-                    www.corralonlosamigos.com
-                </p>
+                    <!-- Buenos Aires -->
+                    <a class="btn btn-dark" data-bs-toggle="modal" href="#bsModalToggle" role="button">Buenos Aires</a>
+                    <div class="modal fade" id="bsModalToggle" aria-hidden="true" aria-labelledby="bsModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light" id="bsModalToggleLabel">Comercios - Buenos Aires</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark">
+                                    <!-- Modificar el data-bs-target="ID modal" para abrir el negocio correspondiente-->
+                                    <a href="#Socio1"  data-bs-target="#bsModalToggle1" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Corralón Los Amigos.</a>
+                                    <p class="text-light">America - Dr. Francisco Raul Bonfi 580.</p>
+                                    <a href="#Socio2 " data-bs-target="#bsModalToggle2" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Ferraro Materiales SRL. </a>
+                                    <p class="text-light" > San Nicolás - Avenida Savio 1449.</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Corralón Los Amigos.  -->
+                    <div class="modal fade" id="bsModalToggle1" aria-hidden="true" aria-labelledby="bsModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered ">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark">
+                                    <h5 class="modal-title text-light" id="bsModalToggleLabel2">Corralón Los Amigos. </h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    America - Dr. Francisco Raul Bonfi 580.</br>
+                                    (02337) 452019 – (02337) 404750.</br>
+                                    losamidos@jsnet.com.ar.</br>
+                                    www.corralonlosamigos.com.
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <button class="btn btn-secondary" data-bs-target="#bsModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ferraro Materiales SRL.-->
+                    <div class="modal fade" id="bsModalToggle2" aria-hidden="true" aria-labelledby="bsModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="bsModalToggleLabel2">Ferraro Materiales SRL.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    San Nicolás - Avenida Savio 1449.</br>
+                                    (0336) 4429092 – (0336) 4454423.</br>
+                                    administracion@ferraromateriales.com.</br>
+                                    facebook/ferraromaterialessrl.
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <button class="btn btn-secondary" data-bs-target="#bsModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Cordoba -->
+                    <a class="btn btn-dark" data-bs-toggle="modal" href="#cordobaModalToggle" role="button">Cordoba</a>
+                    <div class="modal fade" id="cordobaModalToggle" aria-hidden="true" aria-labelledby="cordobaModalToggleLabel"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="cordobaModalToggleLabel">Comercios - Cordoba</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    <!-- Modificar el data-bs-target="ID modal" para abrir el negocio correspondiente-->
+                                    <a href="#Socio1" data-bs-target="#cordobaModalToggle1" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Ferretería Gomez.</a>
+                                    <p>Alta Gracia - Dr. Dino Carignani 447.</p>
+                                    <a href="#Socio2 " data-bs-target="#cordobaModalToggle2" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Merlino.</a>
+                                    <p>Carlos Paz - Av. San Martín 1255.</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ferretería Gomez.  -->
+                    <div class="modal fade" id="cordobaModalToggle1" aria-hidden="true" aria-labelledby="cordobaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="cordobaModalToggleLabel2">Ferretería Gomez.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Dr. Dino Carignani 447.</br>
+                                    (03547) 421007.</br>
+                                    info@ferreteriagomez.com.ar.</br>
+                                    www.ferreteriagomez.com.ar.</br>
+                                    facebook/ferreteriagomez.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#cordobaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Merlino. -->
+                    <div class="modal fade" id="cordobaModalToggle2" aria-hidden="true" aria-labelledby="cordobaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="cordobaModalToggleLabel2">Merlino.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Carlos Paz - Av. San Martín 1255.</br>
+                                    (03541) 439455.</br>
+                                    ventascp@merlinosrl.com.ar.</br>
+                                    www.merlinosrl.com.ar.</br>
+                                    facebook/merlinosrl – instagram/merlino.srl.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#cordobaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- santaFe -->
+                    <a class="btn btn-dark" data-bs-toggle="modal" href="#santaFeModalToggle" role="button">Santa Fe</a>
+                    <div class="modal fade" id="santaFeModalToggle" aria-hidden="true" aria-labelledby="santaFeModalToggleLabel"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="santaFeModalToggleLabel">Comercios - Santa Fe</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    <!-- Modificar el data-bs-target="ID modal" para abrir el negocio correspondiente-->
+                                    <a href="#Socio1" data-bs-target="#santaFeModalToggle1" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Cucina E Bagno.</a>
+                                    <p>Casilda - Buenos Aires 2302.</p>
+                                    <a href="#Socio2 " data-bs-target="#santaFeModalToggle2" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Construcor.</a>
+                                    <p>San Jorge - Lisandro de la Torre 442. </p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cucina E Bagno.  -->
+                    <div class="modal fade" id="santaFeModalToggle1" aria-hidden="true" aria-labelledby="santaFeModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="santaFeModalToggleLabel2">Cucina E Bagno.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Casilda - Buenos Aires 2302.</br>
+                                    (03464) 422075 – (03464) 423214.</br>
+                                    info@rmarconi.com.ar.</br>
+                                    facebook/premoldeadosadriatica.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#santaFeModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Construcor. -->
+                    <div class="modal fade" id="santaFeModalToggle2" aria-hidden="true" aria-labelledby="santaFeModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="santaFeModalToggleLabel2">Construcor.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    San Jorge - Lisandro de la Torre 442.</br>
+                                    (03406) 4408683 – (03406) 442813 – (03406) 15415983.</br>
+                                    construcor.redcopmaco@gmail.com.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#santaFeModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- laPampa -->
+                    <a class="btn btn-dark" data-bs-toggle="modal" href="#laPampaModalToggle" role="button">La Pampa</a>
+                    <div class="modal fade" id="laPampaModalToggle" aria-hidden="true" aria-labelledby="laPampaModalToggleLabel"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="laPampaModalToggleLabel">Comercios - La Pampa</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    <!-- Modificar el data-bs-target="ID modal" para abrir el negocio correspondiente-->
+                                    <a href="#Socio1" data-bs-target="#laPampaModalToggle1" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Materiales Centro SA.</a>
+                                    <p>General Pico - Calle 20 nº 842.</p>
+                                    <a href="#Socio2 " data-bs-target="#laPampaModalToggle2" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Maderera Pampeana.</a>
+                                    <p>Santa Rosa - Av. Santiago Marzo 1816.</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Materiales Centro SA.  -->
+                    <div class="modal fade" id="laPampaModalToggle1" aria-hidden="true" aria-labelledby="laPampaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="laPampaModalToggleLabel2">Materiales Centro SA.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    General Pico - Calle 20 nº 842.</br>
+                                    (02302) 435940 – (02302) 435089.</br>
+                                    materialescentro@materialescentro.com.ar
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#laPampaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Maderera Pampeana. -->
+                    <div class="modal fade" id="laPampaModalToggle2" aria-hidden="true" aria-labelledby="laPampaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="laPampaModalToggleLabel2">Maderera Pampeana.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Santa Rosa - Av. Santiago Marzo 1816.</br> 
+                                    02954- 560056.</br>
+                                    info@mprevestimientos.com.ar.</br>
+                                    www.mprevestimientos.com.ar.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#laPampaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Catamarca -->
+                    <a class="btn btn-dark" data-bs-toggle="modal" href="#CatamarcaModalToggle" role="button">Catamarca</a>
+                    <div class="modal fade" id="CatamarcaModalToggle" aria-hidden="true" aria-labelledby="CatamarcaModalToggleLabel"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="CatamarcaModalToggleLabel">Comercios - Catamarca</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    <!-- Modificar el data-bs-target="ID modal" para abrir el negocio correspondiente-->
+                                    <a href="#Socio1" data-bs-target="#CatamarcaModalToggle1" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Corralón Oscar Vergara.</a>
+                                    <p>Saujil - Fray M. Esquiú 761.</p>
+                                    <a href="#Socio2 " data-bs-target="#CatamarcaModalToggle2" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Corralón Sanchez SRL.</a>
+                                    <p>Tinogasta - Goblet Esq. Sarmiento.</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Corralón Oscar Vergara.  -->
+                    <div class="modal fade" id="CatamarcaModalToggle1" aria-hidden="true" aria-labelledby="CatamarcaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="CatamarcaModalToggleLabel2">Corralón Oscar Vergara.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Saujil - Fray M. Esquiú 761.</br>
+                                    (03835) 492068 – (03835) 492169 – (03835) 154680851.</br>
+                                    corralonvergara@gmail.com</br>
+                                    www.corralonoscarvergara.com</br>
+                                    facebook/corralonoscarvergara
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#CatamarcaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Corralón Sanchez SRL. -->
+                    <div class="modal fade" id="CatamarcaModalToggle2" aria-hidden="true" aria-labelledby="CatamarcaModalToggleLabel2"
+                        tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header bg-dark text-light">
+                                    <h5 class="modal-title" id="CatamarcaModalToggleLabel2">Corralón Sanchez SRL.</h5>
+                                    <button class="btn btn-dark"   data-bs-dismiss="modal" aria-label="Close">X</button>
+                                </div>
+                                <div class="modal-body bg-dark text-light">
+                                    Tinogasta - Goblet Esq. Sarmiento.</br> 
+                                    (03837) 420684.</br>
+                                    corralonsanchez@gmail.com.
+                                </div>
+                                <div class="modal-footer bg-dark text-light">
+                                    <button class="btn btn-secondary" data-bs-target="#CatamarcaModalToggle" data-bs-toggle="modal"
+                                        data-bs-dismiss="modal">Volver</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -1172,6 +1503,10 @@
         </div>
     </footer>
     <!-- Fin Seccion Datos -->
+    <!-- Link js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
