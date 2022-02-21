@@ -55,7 +55,7 @@
     }
 
     .bar-btn {
-        padding-bottom: 300px;
+        margin-bottom: 300px;
         font-size: 25px;
         color: orange;
         margin-right: 20px;
@@ -148,10 +148,14 @@
         grid-area: 3 / 4 / 7/ 7;
         text-align: center;
         font-size: 15px;
+        div #div , #div2 , #div3 , #div4 {
+            display: none;
+        }
     }
 
     div.textoHistoria p {
         padding-right: 100px;
+        font-size: min(13.5px , 1rem);
     }
 
     .vision {

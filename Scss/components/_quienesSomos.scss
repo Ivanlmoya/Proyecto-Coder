@@ -58,8 +58,11 @@
 .textoHistoria {
     grid-area: 2 / 4 / 5 / 6;
     flex-direction: column;
-    font-size: 18px;
+    font-size: min(15px , 1rem);
     @extend %flex;
+    div #div2 , #div3 , #div4 {
+        display: none;
+    }
 }
 
 .vision {

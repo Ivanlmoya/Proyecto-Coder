@@ -56,7 +56,7 @@
     }
 
     .bar-btn {
-        padding-bottom: 350px;
+        margin-bottom: 350px;
         font-size: 25px;
         color: orange;
         margin-right: 20px;
@@ -165,6 +165,9 @@
         font-size: 13px;
         margin-left: 10px;
         margin-right: 10px;
+        div #div , #div2 , #div3 , #div4 {
+            display: none;
+        }
     }
 
     .vision {
